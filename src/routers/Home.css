@@ -1,0 +1,39 @@
+.main_food_container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 10px;
+    margin: 20px;
+    margin-top: 100px;
+ }
+.meal_container{
+   height: auto; 
+   width: auto;
+   overflow: hidden;
+   padding: 20px;
+   border-radius: 50px;
+background: #e0e0e075;
+box-shadow:  20px -20px 60px #bebebe36,
+             -20px 20px 60px #ffffff;
+ }
+ .add{
+     padding: 10px;
+     border-radius: 10px;
+     border: 1px solid rgba(78, 102, 12, 0.329);
+     font-size: x-large;
+ }
+ .add:hover
+ {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: green;
+
+ }
+
+ .meal_container p{
+     color: black;
+     font-size: x-large;
+ }
+ 
+
+ 
+
