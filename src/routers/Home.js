@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import "./Home.css"
 import {add} from "../store/cartSlice"
 const Home = () => {
 
 const [list,setList]=useState([])
 const dispatch=useDispatch()
+
+  //login status
+  const logins=useSelector((state)=>state.login)
+  console.log(logins.isAuth);
+
 
  useEffect(()=>{
   fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
